@@ -5,13 +5,27 @@ body
     margin: 0;
 }
 
-#first /*верхняя картинка*/
+#first /*верхняя часть*/
 {
-	background: red;
-	height: 250px;
+	background-image: url(site.png);
+    background-repeat: no-repeat;
+	height: 655px;
 	width: 100%;
     margin: 0;
     padding: 0;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+#name /*на верхней части*/
+{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-top: 200px;
 }
 
 ul 
@@ -21,20 +35,25 @@ ul
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #330;
 }
 
-.sidebarBlockTitle
+.sidebarBlockTitle /*меню слева*/
 {
     padding-top: 25%;
 }
 
-#holovna
+#holovna  /*про нас сверху*/
 {
-    padding-left: 350px;
+    padding-left: 33%;
+}
+
+#contact /*контакты сверху*/
+{
+    padding-right: 10%;
 }
 	
-#top-menu ul 
+#top-menu ul /*верхние ячейки*/
 {
     width: 100%;
     list-style-type: none;
@@ -42,13 +61,116 @@ ul
     /*padding-left: 250px;*/
     overflow: hidden;
     background-color: #333;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#second 
+#second /*слева*/
 {
     width: 25%;
     float: left;
 }
+
+.userColumn .columnLeft  /*слева*/
+{
+    float: left;
+    width: 25%;
+    position: relative;
+    /*padding-bottom: 8px;*/
+}
+
+.sidebarBlockTitle   /*Меню слева*/
+{
+    background: red;
+    font-size: 25px;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+#top-menu   /*верхняя панель*/ 
+{
+    position: fixed;
+    width: 100%;
+    height: 200px;
+}
+
+#third  /*справа ячейка*/
+{
+    /*margin-left: 250px;*/
+    background: #333;
+    float: left;
+    width: 75%;
+    padding: 0;
+}
+
+#main_inf  /*справа текст*/
+{
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 20px;
+    height: 640px;
+}
+
+#name-3
+{
+    color: white;
+    font-size: 45px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+#info
+{
+    padding-top: 20px;
+    padding-left: 25px;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+}
+
+
+#forth
+{
+    color: white;
+    background-color: #337;
+    padding-left: 15px;
+    height: 600px;
+    float: left;
+
+}
+
+#detals a
+{
+    color: red;
+    font-size: 30px;
+    padding-left: 25px;
+}
+
+#katalog
+{
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 li 
 {
@@ -67,15 +189,16 @@ li a, dropbtn
 
 a.dropbtn
 {
-    padding-left: 65px;
-    padding-right: 65px;
+    /*padding-left: 65px;
+    padding-right: 65px;*/
     font-size: 20px;
+    /*float: right;*/
 }
 
 #top-menu ul a
 {
-    padding-left: 65px;
-    padding-right: 65px;
+    /*padding-left: 65px;
+    padding-right: 65px;*/
     font-size: 20px;
 }
 
@@ -107,6 +230,7 @@ li.dropdown
 .dropdown-content a 
 {
     color: black;
+    background: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -121,6 +245,8 @@ li.dropdown
 .dropdown:hover .dropdown-content 
 {
     display: block;
+
+    margin-top: 10px;
 }
 
 #second li 
@@ -128,23 +254,6 @@ li.dropdown
     margin-left: 0;
 }
 
-.userColumn .columnLeft
-{
-    float: left;
-    width: 25%;
-    position: relative;
-    padding-bottom: 8px;
-}
-
-.sidebarBlockTitle
-{
-    background: red;
-    font-size: 25px;
-    height: 45px;
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-}
 
 .subgroup
 {
@@ -161,8 +270,10 @@ li.dropdown
     font-size: 16px;
     text-align: center;
     border-bottom: 1px solid black;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     color: white;
 }
 
@@ -171,8 +282,8 @@ li.dropdown
     font-size: 16px;
     text-align: center;
     border-bottom: 1px solid black;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     color: white;
  }
@@ -182,8 +293,8 @@ li.dropdown
     font-size: 16px;
     text-align: center;
     border-bottom: 1px solid black;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: white;
     width: 100%;
 
@@ -195,8 +306,8 @@ li.dropdown
     width: 100%;
     text-align: center;
     border-bottom: 1px solid black;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: white;
  }
 
@@ -205,8 +316,8 @@ li.dropdown
     font-size: 16px;
     text-align: center;
     border-bottom: 1px solid black;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: white;
     width: 100%;
 
@@ -216,28 +327,27 @@ li.dropdown
     font-size: 16px;
     text-align: center;
     border-bottom: 1px solid black;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: white;
     width: 100%;
-
 }
 .map
 {
     font-size: 16px;
     text-align: center;
     border-bottom: 1px solid black;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: white;
     width: 100%;
 }
 
-#third
+hr 
 {
-    /*margin-left: 250px;*/
-    background: green;
-    float: left;
-    width: 75%;
-    padding: 0;
+    border-color: orange;
+    border-width: 3px;
+    width: 350px;
+    align-self: center;
 }
+
