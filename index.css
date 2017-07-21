@@ -1,0 +1,243 @@
+body 
+{
+    background: yellow;
+    padding: 0;
+    margin: 0;
+}
+
+#first /*верхняя картинка*/
+{
+	background: red;
+	height: 250px;
+	width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul 
+{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.sidebarBlockTitle
+{
+    padding-top: 25%;
+}
+
+#holovna
+{
+    padding-left: 350px;
+}
+	
+#top-menu ul 
+{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    /*padding-left: 250px;*/
+    overflow: hidden;
+    background-color: #333;
+}
+
+#second 
+{
+    width: 25%;
+    float: left;
+}
+
+li 
+{
+    /*padding-left: 250px;*/
+    float: left;
+}
+
+li a, dropbtn 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a.dropbtn
+{
+    padding-left: 65px;
+    padding-right: 65px;
+    font-size: 20px;
+}
+
+#top-menu ul a
+{
+    padding-left: 65px;
+    padding-right: 65px;
+    font-size: 20px;
+}
+
+li a:hover, .dropdown:hover .dropbtn 
+{
+    background-color: #111;
+}
+
+.active 
+{
+    background-color: #4CAF50;
+}
+
+li.dropdown
+{
+    display: inline-block;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover 
+{
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+#second li 
+{
+    margin-left: 0;
+}
+
+.userColumn .columnLeft
+{
+    float: left;
+    width: 25%;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.sidebarBlockTitle
+{
+    background: red;
+    font-size: 25px;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.subgroup
+{
+    width: 100%;
+}
+
+.subgroup a
+{
+    text-align: center;
+}
+
+.company 
+{
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.cont_user
+ {
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    color: white;
+ }
+
+.cont_phone
+ {
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    width: 100%;
+
+ }
+
+.mail
+ {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+ }
+
+.cont_adress
+ {
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    width: 100%;
+
+ }
+.cont_grafic
+{
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    width: 100%;
+
+}
+.map
+{
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    width: 100%;
+}
+
+#third
+{
+    /*margin-left: 250px;*/
+    background: green;
+    float: left;
+    width: 75%;
+    padding: 0;
+}
