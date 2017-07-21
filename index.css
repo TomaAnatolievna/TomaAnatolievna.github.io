@@ -112,7 +112,7 @@ ul
     padding-top: 40px;
     padding-left: 25px;
     padding-right: 20px;
-    height: 640px;
+    height: 714px;
 }
 
 #name-3
@@ -140,6 +140,7 @@ ul
     padding-left: 15px;
     height: 600px;
     float: left;
+    width: 100%;
 
 }
 
@@ -150,9 +151,15 @@ ul
     padding-left: 25px;
 }
 
-#katalog
+/*#katalog
 {
     padding-top: 20px;
+}*/
+
+#menu-categories-title
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -351,3 +358,63 @@ hr
     align-self: center;
 }
 
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */

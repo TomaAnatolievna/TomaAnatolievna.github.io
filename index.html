@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<title> ПП Аграрно-Промисловий Комплекс </title>
 </head>
@@ -98,16 +104,101 @@
 
 	<div id="forth">
 	<div id="katalog">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit, velit eu facilisis tempor, tellus nisl faucibus urna, et egestas quam est nec sem. Suspendisse accumsan id ipsum non tincidunt. Fusce molestie mi elit, vel egestas ante bibendum sed. Morbi porta arcu justo, vel scelerisque turpis commodo pellentesque. Fusce pellentesque sapien quis sagittis maximus. Donec id bibendum odio, euismod luctus velit. Mauris a rutrum dolor. Nam felis lacus, consequat ut eros et, convallis eleifend est. Cras cursus odio mattis maximus volutpat.
-
-Integer ac nibh congue, malesuada purus ac, consequat odio. Aenean eu mollis libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus semper tortor enim, nec fringilla nisl pellentesque nec. Vivamus tempor placerat ligula. Nunc pretium, risus id efficitur convallis, libero dui molestie erat, nec malesuada magna velit id neque. Phasellus mollis est quis ante consectetur laoreet. Donec nec justo nunc.
-
-Nam porttitor nulla in turpis consectetur posuere. Vestibulum eu urna tristique, pharetra tellus quis, ultrices nisl. Vestibulum nibh odio, condimentum eget tellus eu, semper tempus lectus. Nulla suscipit ornare lectus, consectetur blandit nulla dictum et. Quisque euismod vehicula mauris sit amet pharetra. Nulla sodales augue pulvinar orci eleifend faucibus. Phasellus sodales dictum nulla, eu ultricies tellus pharetra eu. Nam eget tristique elit. Sed laoreet diam sapien, eget laoreet enim tincidunt ac. Nam cursus orci dui, congue placerat purus viverra id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et nibh ac nulla maximus bibendum at sit amet metus. In finibus lacinia libero, et suscipit massa. Fusce ut odio nisl. Maecenas volutpat felis et mi convallis, vitae pellentesque eros malesuada. Ut porttitor in ligula ac lobortis.
-
-Maecenas vitae turpis blandit, placerat ipsum eget, condimentum justo. Cras consequat, eros et vulputate iaculis, magna odio rutrum velit, eget feugiat metus ipsum hendrerit orci. Sed condimentum nulla eros, quis eleifend dolor faucibus vitae. Fusce pharetra aliquam purus nec tristique. Aliquam aliquam placerat purus, vitae elementum lectus bibendum sed. Suspendisse vehicula tortor orci, a pellentesque sapien sollicitudin at. Proin ac accumsan tellus, ut dapibus odio. Donec pulvinar ultricies vestibulum. Etiam pretium turpis dolor, eu aliquam tellus gravida id. Cras sodales interdum convallis. In ultricies odio sed cursus placerat.
-
-Ut id nibh lacus. Aenean at mi nec ante luctus malesuada id eget dolor. Praesent in ipsum sit amet augue vestibulum molestie pretium non libero. Cras eget turpis vitae leo eleifend ultricies nec sollicitudin dui. Vestibulum vitae interdum sapien. Vestibulum ultricies sapien et euismod congue. Donec quis bibendum dolor. Duis pellentesque sapien a sapien gravida ultricies. Suspendisse a mattis risus. Quisque venenatis tincidunt lacus consequat blandit. Praesent varius erat quis lorem sagittis, non luctus lacus placerat. Quisque auctor orci vel erat aliquam consequat.
+		<div id="main-content" class="container">
+		<h2 id="menu-categories-title" class="text-center">Наша продукція</h2>
+			<section class="row">
+			<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  				<a href="#" onclick="$dc.loadMenuItems('L');">
+    				<div class="category-tile">
+      				<img width="200" height="200" src="images/menu/L/L.jpg" alt="Lunch">
+     				<span>Lunch</span>
+   					</div>
+    			</a>
+			</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('A');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/A/A.jpg" alt="Soup">
+      <span>Soup</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('B');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/B/B.jpg" alt="Appetizers">
+      <span>Appetizers</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('SP');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/SP/SP.jpg" alt="Chef's Recommendations">
+      <span>Chef's Recommendations</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('C');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/C/C.jpg" alt="Chicken">
+      <span>Chicken</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('F');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/F/F.jpg" alt="Beef">
+      <span>Beef</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('V');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/V/V.jpg" alt="Veal">
+      <span>Veal</span>
+    </div>
+  </a>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('DK');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/DK/DK.jpg" alt="Duck">
+      <span>Duck</span>
+    </div>
+  </a>
+</div>
+</section></div>
 </div>
 	</div>
+
+	 <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          7105 Reisterstown Road<br>
+          Baltimore, MD 21215
+          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
+    </div>
+  </footer>
 </body>
 </html>
