@@ -1,0 +1,327 @@
+body 
+{
+    background: yellow;
+    padding: 0;
+    margin: 0;
+}
+
+/*ОБЩИЕ*/
+
+ul 
+{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #330;
+    text-align: center;
+}
+
+li 
+{
+    float: left;
+}
+
+/*КОНЕЦ ОБЩИЕ*/
+
+
+/*ВЕРХНЯЯ ЧАСТЬ*/
+
+#holovna  /*про нас сверху*/
+{
+    padding-left: 33%;
+}
+
+#contact /*контакты сверху*/
+{
+    padding-right: 10%;
+}
+    
+#top-menu ul /*верхние ячейки*/
+{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /*padding-top: 10px;*/
+    /*padding-bottom: 1px;*/
+}
+
+#top-menu   /*верхняя панель*/ 
+{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 10;
+}
+
+
+
+li a, .dropbtn   /*про нас  контакты*/
+{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.dropbtn {         /*товари послуги*/
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#top-menu ul a
+{
+    font-size: 20px;
+}
+
+li a:hover, .dropdown:hover .dropbtn 
+{
+    background-color: #300;
+}
+
+.active 
+{
+    background-color: #300;
+}
+
+li.dropdown
+{
+    display: inline-block;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*padding-top: 5px;*/
+    /*padding-bottom: 10px;*/
+    z-index: 2;
+}
+
+.dropdown-content a 
+{
+    color: black;
+    /*background: white;*/
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover 
+{
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+    /*margin-top: 10px;*/
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #300;
+}
+
+/*КОНЕЦ ВЕРХНЕЙ ЧАСТИ*/
+
+
+/*МЕНЮ СЛЕВА*/
+.sidebarBlockTitle 
+{
+    padding-top: 25%;
+    /*padding-bottom: 40px;*/
+}
+
+#second /*слева*/
+{
+    width: 25%;
+    float: left;
+}
+
+.userColumn .columnLeft  /*слева*/
+{
+    float: left;
+    width: 25%;
+    position: relative;
+    /*padding-bottom: 8px;*/
+}
+
+#second li 
+{
+    margin-left: 0;
+}
+
+.sidebarBlockTitleM  /*Меню слева*/
+{
+    background: red;
+    font-size: 25px;
+    height: 110px;
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+.sidebarBlockTitleC  /*Контакти слева*/
+{
+    background: red;
+    font-size: 25px;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+
+.subgroup
+{
+    width: 100%;
+}
+
+.subgroup a
+{
+    text-align: center;
+}
+
+.company 
+{
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+}
+
+.cont_user
+ {
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    color: white;
+ }
+
+.cont_phone
+ {
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    width: 100%;
+
+ }
+
+.mail
+ {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+ }
+
+.cont_adress
+ {
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    width: 100%;
+
+ }
+.cont_grafic
+{
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    width: 100%;
+}
+.map
+{
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    width: 100%;
+}
+/*КОНЕЦ МЕНЮ СЛЕВА*/
+
+
+/*ТРЕТЬЯ ЧАСТЬ*/
+
+#third  /*справа ячейка*/
+{
+    /*margin-left: 250px;*/
+    background: #339;
+    float: left;
+    width: 75%;
+    padding: 0;
+}
+
+#main_inf  /*справа текст*/
+{
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 20px;
+    height: 804px;
+}
+
+#name-3
+{
+    color: white;
+    font-size: 45px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+#info
+{
+    padding-top: 20px;
+    padding-left: 25px;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+}
+
+#detals a
+{
+    color: red;
+    font-size: 30px;
+    padding-left: 25px;
+}
+ /*КОНЕЦ ТРЕТЬЯ ЧАСТЬ*/
