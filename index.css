@@ -1,6 +1,6 @@
 body 
 {
-    background: yellow;
+    background: lightgreen;
     padding: 0;
     margin: 0;
 }
@@ -48,7 +48,8 @@ li
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    /*padding-top: 10px;*/
+    height: 70px;
+    padding-top: 5px;
     /*padding-bottom: 1px;*/
 }
 
@@ -320,7 +321,7 @@ hr
     /*margin-left: 250px;*/
     background-color: #586857;
     float: left;
-    width: 75%;
+    width: 100%;
     font-color: black;
     /*padding: 0;*/
     padding: 2%;
@@ -488,7 +489,7 @@ hr
 
 #preim
 {
-    padding-left: 70px;
+    padding-left: 40px;
     padding-top: 30px;
     padding-bottom: 20px;
     width: 42%;
@@ -578,21 +579,3 @@ form
   margin-top: 25px;
 }
 /* END FOOTER */
-
-
-
-@media screen and (max-width: 1200px) {
- 
-}
- 
-@media screen and (max-width:992px) {
- 
-}
- 
-@media screen and (max-width: 768px) {
- 
-}
- 
-@media screen and (max-width:480px) {
- 
-}
