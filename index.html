@@ -12,8 +12,57 @@
 </head>
 
 <body>
-	
-	<div id="top-menu">
+
+<header>
+	<!-- <div id="top-menu"> -->
+	<nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+
+
+         <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+         <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+           <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">
+               <br class="hidden-xs"> Головна</a>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">
+               <br class="hidden-xs"> Товари</a>
+                <div class="dropdown-content">
+	      			<a href="#">Link 1</a>
+	      			<a href="#">Link 2</a>
+	      			<a href="#">Link 3</a>
+   				</div>
+            </li>
+           <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">
+                <br class="hidden-xs"> Послуги</a>
+                <div class="dropdown-content">
+	      			<a href="#">Link 1</a>
+	      			<a href="#">Link 2</a>
+	      			<a href="#">Link 3</a>
+   				</div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">
+               <br class="hidden-xs"> Контакти </a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+</header>
+		<!-- <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
 		<ul>
 	  		<li id="holovna">
 	  		<a href="index.html">Головна</a>
@@ -38,7 +87,10 @@
 	  		<a href="contacts.html">Контакти</a>
 	  		</li> 
   		</ul>
+  		</div>
+  		</nav>
 	</div>
+	</header> -->
 
 	<div id="first"> 
 	<div id="name"> ПП Аграрно-Промисловий Комплекс 
@@ -269,5 +321,9 @@
       <div class="text-center">&copy; Copyright ПП "АПК" 2017</div>
     </div>
   </footer>
+
+
+<script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
