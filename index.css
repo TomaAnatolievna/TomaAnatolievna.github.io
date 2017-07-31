@@ -3,39 +3,53 @@ body
     background: lightgreen;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 /** HEADER **/
-#header-nav {
+#header-nav 
+{
   background-color: #333;
   border-radius: 0;
   border: 0;
   width: 100%;
   position: fixed;
+  z-index: 10;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
+.navbar-brand a:hover, .navbar-brand a:focus 
+{
   text-decoration: none;
 }
 
-#nav-list {
+#nav-list 
+{
   margin-top: 10px;
 }
-#nav-list a {
+
+#nav-list a 
+{
   color: white;
   text-align: center;
 }
-#nav-list a:hover {
+
+#nav-list a:hover
+{
   background: #black;
 }
-#nav-list a span {
+
+#nav-list a span 
+{
   font-size: 1.8em;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar 
+{
   border: 1px solid white;
 }
-.navbar-header button.navbar-toggle {
+
+.navbar-header button.navbar-toggle 
+{
   clear: both;
   margin-top: 5px;
 }
@@ -53,7 +67,8 @@ li a, .dropbtn   /*про нас  контакты*/
     padding: 16px;
 }
 
-.dropdown {
+.dropdown 
+{
     position: relative;
     display: inline-block;
 }
@@ -130,7 +145,8 @@ li.dropdown
     display: block;
 }
 
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn 
+{
     background-color: #333;
 }
 
@@ -143,11 +159,13 @@ hr
     border-color: orange;
     border-width: 4px;
     width: 450px;
-    align-self: center;
+    /*align-self: center;*/
+    vertical-align: middle;
 }
 
 #first 
 {
+    vertical-align: middle;
     background-image: url(site.png);
     background-repeat: no-repeat;
     height: 655px;
@@ -162,12 +180,13 @@ hr
 
 #name /*на верхней части*/
 {
-    padding-top: 100px;
+    /*padding-top: 100px;*/
     text-align: center;
     font-size: 50px;
     color: white;
     margin: 0;
     padding-top: 200px;
+    vertical-align: middle;ssss
 }
 /*КОНЕЦ ОСНОВНОЙ СТРАНИЦЫ*/
 
@@ -365,16 +384,18 @@ hr
 }
 
 
-.category-tile { 
+.category-tile 
+{ 
   position: relative;
   border: 2px solid #3F0C1F;
   overflow: hidden;
   width: 200px;
   height: 200px;
   margin: 0 auto 15px;
-  }
+}
 
-.category-tile span {
+.category-tile span 
+{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -386,11 +407,14 @@ hr
   color: #fff;
   opacity: .8;
 }
-.category-tile:hover {
+
+.category-tile:hover 
+{
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 
-#menu-categories-title + div {
+#menu-categories-title + div 
+{
   margin-bottom: 50px;
 }
 /* END MENU CATEGORIES PAGE */
@@ -524,7 +548,8 @@ form
 
 
 /* FOOTER */
-.panel-footer {
+.panel-footer 
+{
   margin-top: 30px;
   padding-top: 35px;
   padding-bottom: 30px;
@@ -532,24 +557,36 @@ form
   border-top: 0;
   color: white;
 }
-.panel-footer div.row {
+
+.panel-footer div.row 
+{
   margin-bottom: 35px;
 }
-#hours, #address {
+
+#hours, #address 
+{
   line-height: 2;
 }
-#hours > span, #address > span {
+
+#hours > span, #address > span
+{
   font-size: 1.3em;
 }
-#address p {
+
+#address p 
+{
   color: #557c3e;
   font-size: .8em;
   line-height: 1.8;
 }
-#testimonials {
+
+#testimonials 
+{
   font-style: italic;
 }
-#testimonials p:nth-child(2) {
+
+#testimonials p:nth-child(2) 
+{
   margin-top: 25px;
 }
 /* END FOOTER */
@@ -560,16 +597,496 @@ form
 /********** Large devices only **********/
 @media (min-width: 1200px) 
 {
-  
+  ul
+  {
+    width: 68%;
+  }
+
+  nav#header-nav.navbar.navbar-default
+  {
+        width: 100%;
+  }
+
+  hr 
+  {
+    border-color: orange;
+    border-width: 4px;
+    width: 450px;
+    /*align-self: center;*/
+    vertical-align: middle;
+  }
+
+#first 
+{
+    vertical-align: middle;
+    background-image: url(site.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
 }
+
+#name /*на верхней части*/
+{
+    /*padding-top: 100px;*/
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    margin: 0;
+    padding-top: 15%;
+    padding-bottom: 20%;
+    vertical-align: middle;
+}
+/*КОНЕЦ ОСНОВНОЙ СТРАНИЦЫ*/
+
+/*ТРЕТЬЯ ЧАСТЬ*/
+#third  /*справа ячейка*/
+{
+    background-color: #586857;
+    float: left;
+    width: 100%;
+    font-color: black;
+    margin-top: 0;
+    padding: 2%;
+    height: 100%;
+}
+
+#main_inf  /*справа текст*/
+{
+    margin: 1.1%;
+    padding: 1%;
+    height: 100%;
+    background-color: #698B69;
+    font-color: black;
+}
+
+#name-3
+{
+    color: black;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+#info
+{
+    padding-top: 20px;
+    padding-left: 25px;
+    font-size: 30px;
+    color: black;
+    text-align: left;
+}
+
+#detals a
+{
+    color: white;
+    font-size: 30px;
+    padding-left: 25px;
+}
+ /*КОНЕЦ ТРЕТЬЯ ЧАСТЬ*/
+
+
+
+/* MENU CATEGORIES PAGE */
+
+#forth
+{
+    /*margin-top: 25px;*/
+    color: white;
+    background-color: #333;
+    padding-left: 15px;
+    height: 100%;
+    padding-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+/* END MENU CATEGORIES PAGE */
+
+
+/*ПРЕИМУЩЕСТВА И ЗАКАЗ*/
+#fifth
+{
+    color: white;
+    background-color: #586857;
+    padding-left: 25px;
+    height: 100%;
+    float: left;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+#car
+{
+    height: 110px;
+    width: 110px;
+    background-color: orange;
+    padding-left: 7px;
+    padding-top: 10px;
+    /*float: left;*/
+}
+
+#car-2
+{
+    /*float: left;*/
+    height: 20px;
+    width: 100%;
+    font-size:23px;
+    padding-bottom: 15px;
+    /*padding: 5px;*/
+    /*font-weight: 600px;*/
+    /*padding-left: 120px;*/
+
+}
+
+#car-3
+{
+    /*float: left;*/
+    height: 20px;
+    width: 350px; 
+    padding-top: 20px;
+    padding-bottom: 35px;
+    font-size: 15px;   
+}
+
+#opis
+{
+    float: left;
+}
+
+#first-img
+{
+    clear: left;
+    padding-top: 30px;
+}
+
+#second-img
+{
+    clear: left;
+    padding-top: 30px;
+}
+
+#third-img
+{
+    clear: left;
+    padding-top: 30px;
+}
+
+#preim
+{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 55%;
+    float: left;
+    height: 630px;
+    background: #2F4F4F;
+    margin-top: 35px;
+}
+
+#zagl
+{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#zakaz
+{
+    width: 42%;
+    height: 630px;
+    background: #698B69;
+    float: left;
+    padding-right: 70px;
+    padding-top: 30px;
+    margin-right: 20px;
+    margin-top: 35px;
+}
+
+#zakaz-1
+{
+    font-size: 25px;
+    padding-left: 25px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+#zakaz-2
+{
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 10px;
+    color: black;
+}
+
+form
+{
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 25%;
+    float: left;
+    color: black;
+    font-size: 15px;
+    padding-top: 10px;
+    border: 2px solid black;
+}
+/*КОНЕЦ ПРЕИМУЩЕСТВА И ЗАКАЗ*/   
+}
+
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) 
 {
   ul
   {
-    width: 70%;
+    width: 72%;
   }
+
+   nav#header-nav.navbar.navbar-default
+    {
+        width: 100%;
+    }
+
+    /*ОСНОВНАЯ СТРАНИЦА*/
+
+hr 
+{
+    border-color: orange;
+    border-width: 4px;
+    width: 400px;
+    /*align-self: center;*/
+    vertical-align: middle;
+}
+
+#first 
+{
+    vertical-align: middle;
+    background-image: url(site.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+#name /*на верхней части*/
+{
+    /*padding-top: 100px;*/
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin: 0;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    vertical-align: middle;
+}
+/*КОНЕЦ ОСНОВНОЙ СТРАНИЦЫ*/
+
+/*ТРЕТЬЯ ЧАСТЬ*/
+#third  /*справа ячейка*/
+{
+    background-color: #586857;
+    float: left;
+    width: 100%;
+    font-color: black;
+    margin-top: 0;
+    padding: 2%;
+    height: 100%;
+}
+
+#main_inf  /*справа текст*/
+{
+    margin: 1.1%;
+    padding: 1%;
+    height: 100%;
+    background-color: #698B69;
+    font-color: black;
+}
+
+#name-3
+{
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+#info
+{
+    padding-top: 20px;
+    padding-left: 25px;
+    font-size: 25px;
+    color: black;
+    text-align: left;
+}
+
+#detals a
+{
+    color: white;
+    font-size: 25px;
+    padding-left: 25px;
+}
+ /*КОНЕЦ ТРЕТЬЯ ЧАСТЬ*/
+
+
+
+/* MENU CATEGORIES PAGE */
+
+#forth
+{
+    /*margin-top: 25px;*/
+    color: white;
+    background-color: #333;
+    padding-left: 15px;
+    height: 100%;
+    padding-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+/* END MENU CATEGORIES PAGE */
+
+
+/*ПРЕИМУЩЕСТВА И ЗАКАЗ*/
+#fifth
+{
+    color: white;
+    background-color: #586857;
+    padding-left: 25px;
+    height: 100%;
+    float: left;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+#car
+{
+    height: 110px;
+    width: 110px;
+    background-color: orange;
+    padding-left: 7px;
+    padding-top: 10px;
+    /*float: left;*/
+}
+
+#car-2
+{
+    /*float: left;*/
+    height: 20px;
+    width: 100%;
+    font-size:23px;
+    padding-bottom: 15px;
+    /*padding: 5px;*/
+    /*font-weight: 600px;*/
+    /*padding-left: 120px;*/
+
+}
+
+#car-3
+{
+    /*float: left;*/
+    height: 20px;
+    width: 350px; 
+    padding-top: 20px;
+    padding-bottom: 35px;
+    font-size: 15px;   
+}
+
+#opis
+{
+    float: left;
+}
+
+#first-img
+{
+    clear: left;
+    padding-top: 30px;
+}
+
+#second-img
+{
+    clear: left;
+    padding-top: 30px;
+}
+
+#third-img
+{
+    clear: left;
+    padding-top: 30px;
+}
+
+#preim
+{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 55%;
+    float: left;
+    height: 630px;
+    background: #2F4F4F;
+    margin-top: 35px;
+}
+
+#zagl
+{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#zakaz
+{
+    width: 42%;
+    height: 630px;
+    background: #698B69;
+    float: left;
+    padding-right: 70px;
+    padding-top: 30px;
+    margin-right: 20px;
+    margin-top: 35px;
+}
+
+#zakaz-1
+{
+    font-size: 25px;
+    padding-left: 25px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+#zakaz-2
+{
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 10px;
+    color: black;
+}
+
+form
+{
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 25%;
+    float: left;
+    color: black;
+    font-size: 15px;
+    padding-top: 10px;
+    border: 2px solid black;
+}
+/*КОНЕЦ ПРЕИМУЩЕСТВА И ЗАКАЗ*/   
 }
 
 /********** Small devices only **********/
@@ -579,31 +1096,640 @@ form
     {
         width: 80%;
     }
+
+
+    nav#header-nav.navbar.navbar-default
+    {
+        width: 100%;
+    }
+
+    /*ОСНОВНАЯ СТРАНИЦА*/
+
+hr 
+{
+    border-color: orange;
+    border-width: 4px;
+    width: 350px;
+    /*align-self: center;*/
+    vertical-align: middle;
+}
+
+#first 
+{
+    vertical-align: middle;
+    background-image: url(site.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+#name /*на верхней части*/
+{
+    /*padding-top: 100px;*/
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    vertical-align: middle;
+}
+/*КОНЕЦ ОСНОВНОЙ СТРАНИЦЫ*/
+
+/*ТРЕТЬЯ ЧАСТЬ*/
+#third  /*справа ячейка*/
+{
+    background-color: #586857;
+    float: left;
+    width: 100%;
+    font-color: black;
+    margin-top: 0;
+    padding: 2%;
+    height: 100%;
+}
+
+#main_inf  /*справа текст*/
+{
+    margin: 1.1%;
+    padding: 1%;
+    height: 100%;
+    background-color: #698B69;
+    font-color: black;
+}
+
+#name-3
+{
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+#info
+{
+    padding-top: 20px;
+    padding-left: 25px;
+    font-size: 25px;
+    color: black;
+    text-align: left;
+}
+
+#detals a
+{
+    color: white;
+    font-size: 25px;
+    padding-left: 25px;
+}
+ /*КОНЕЦ ТРЕТЬЯ ЧАСТЬ*/
+
+
+
+/* MENU CATEGORIES PAGE */
+
+#forth
+{
+    /*margin-top: 25px;*/
+    color: white;
+    background-color: #333;
+    padding-left: 15px;
+    height: 100%;
+    padding-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+/* END MENU CATEGORIES PAGE */
+
+
+/*ПРЕИМУЩЕСТВА И ЗАКАЗ*/
+#fifth
+{
+    color: white;
+    background-color: #586857;
+    padding-left: 25px;
+    height: 100%;
+    float: left;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+#car
+{
+    height: 110px;
+    width: 110px;
+    background-color: orange;
+    padding-left: 7px;
+    padding-top: 10px;
+    /*float: left;*/
+}
+
+#car-2
+{
+    /*float: left;*/
+    height: 20px;
+    width: 100%;
+    font-size:20px;
+    /*padding: 5px;*/
+    /*font-weight: 600px;*/
+    /*padding-left: 120px;*/
+
+}
+
+#car-3
+{
+    /*float: left;*/
+    height: 20px;
+    width: 350px; 
+    padding-top: 15px;
+    padding-bottom: 35px;
+    font-size: 15px;   
+}
+
+#opis
+{
+    float: left;
+}
+
+#first-img
+{
+    clear: left;
+    padding-top: 10px;
+}
+
+#second-img
+{
+    clear: left;
+    padding-top: 10px;
+}
+
+#third-img
+{
+    clear: left;
+    padding-top: 10px;
+}
+
+#preim
+{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    width: 50%;
+    float: left;
+    background: #2F4F4F;
+    margin-top: 35px;
+}
+
+#zagl
+{
+    font-size: 25px;
+    text-align: center;
+    /*padding-right: 100px;*/
+}
+
+#zakaz
+{
+    width: 47%;
+    height: 640px;
+    background: #698B69;
+    float: left;
+    padding-right: 70px;
+    padding-top: 30px;
+    margin-right: 20px;
+    margin-top: 35px;
+}
+
+#zakaz-1
+{
+    font-size: 25px;
+    padding-left: 25px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+#zakaz-2
+{
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 10px;
+    color: black;
+}
+
+form
+{
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 25%;
+    float: left;
+    color: black;
+    font-size: 15px;
+    padding-top: 10px;
+    border: 2px solid black;
+}
+/*КОНЕЦ ПРЕИМУЩЕСТВА И ЗАКАЗ*/
+
 }
 
 /********** Extra small devices only **********/
-@media (max-width: 767px) {
+@media (min-width: 480px) and  (max-width: 767px)
+{
   /* Header */
-  .navbar-brand {
+  .navbar-brand 
+  {
     padding-top: 10px;
     height: 80px;
   }
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
+
+  #collapsable-nav a {
+   /* Collapsed nav menu text */
+    font-size: 1.7em;
+    text-align: center;
   }
-  .navbar-brand p { /* Kosher cert */
-    font-size: .6em;
-    margin-top: 12px;
-  }
-  .navbar-brand p img { /* Star-K */
-    height: 20px;
+  #collapsable-nav a span { 
+    background-color: white;/* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
   }
 
-  #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
   }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+    /*ОСНОВНАЯ СТРАНИЦА*/
+
+
+
+/*div#collapsable-nav.navbar-collapse.collapse.
+{
+    text-align: center;
+    padding-top: 15%;
+}*/
+
+li
+{
+    text-align: center;
+    padding-left: 45%;
+    padding-right: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+
+
+ul
+    {
+        width: 80%;
+    }
+
+
+    nav#header-nav.navbar.navbar-default
+    {
+        width: 100%;
+    }
+
+    /*ОСНОВНАЯ СТРАНИЦА*/
+
+hr 
+{
+    border-color: orange;
+    border-width: 4px;
+    width: 250px;
+    /*align-self: center;*/
+    vertical-align: middle;
+}
+
+#first 
+{
+    vertical-align: middle;
+    background-image: url(site.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+#name /*на верхней части*/
+{
+    /*padding-top: 100px;*/
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    vertical-align: middle;
+}
+/*КОНЕЦ ОСНОВНОЙ СТРАНИЦЫ*/
+
+/*ТРЕТЬЯ ЧАСТЬ*/
+#third  /*справа ячейка*/
+{
+    background-color: #586857;
+    float: left;
+    width: 100%;
+    font-color: black;
+    margin-top: 0;
+    padding: 2%;
+    height: 100%;
+}
+
+#main_inf  /*справа текст*/
+{
+    margin: 1.1%;
+    padding: 1%;
+    height: 100%;
+    background-color: #698B69;
+    font-color: black;
+}
+
+#name-3
+{
+    color: black;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+#info
+{
+    padding-top: 20px;
+    padding-left: 25px;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+}
+
+#detals a
+{
+    color: white;
+    font-size: 18px;
+    padding-left: 25px;
+}
+ /*КОНЕЦ ТРЕТЬЯ ЧАСТЬ*/
+
+
+
+/* MENU CATEGORIES PAGE */
+
+#forth
+{
+    /*margin-top: 25px;*/
+    color: white;
+    background-color: #333;
+    padding-left: 15px;
+    height: 100%;
+    padding-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+/* END MENU CATEGORIES PAGE */
+
+
+/*ПРЕИМУЩЕСТВА И ЗАКАЗ*/
+#fifth
+{
+    color: white;
+    background-color: #586857;
+    padding-left: 25px;
+    height: 100%;
+    float: left;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding-right: 25px;
+}
+
+#car
+{
+    height: 110px;
+    width: 110px;
+    background-color: orange;
+    padding-left: 7px;
+    padding-top: 10px;
+    /*float: left;*/
+}
+
+#car-2
+{
+    /*float: left;*/
+    height: 20px;
+    width: 100%;
+    font-size:20px;
+    /*padding: 5px;*/
+    /*font-weight: 600px;*/
+    /*padding-left: 120px;*/
+
+}
+
+#car-3
+{
+    /*float: left;*/
+    height: 20px;
+    width: 350px; 
+    padding-top: 15px;
+    padding-bottom: 35px;
+    font-size: 15px;   
+}
+
+#opis
+{
+    float: left;
+}
+
+#first-img
+{
+    clear: left;
+    padding-top: 10px;
+}
+
+#second-img
+{
+    clear: left;
+    padding-top: 10px;
+}
+
+#third-img
+{
+    clear: left;
+    padding-top: 10px;
+}
+
+#preim
+{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-right: 20px;
+    width: 100%;
+    float: left;
+    background: #2F4F4F;
+    margin-top: 35px;
+}
+
+#zagl
+{
+    font-size: 25px;
+    text-align: center;
+    /*padding-right: 100px;*/
+}
+
+#zakaz
+{
+    width: 100%;
+    height: 640px;
+    background: #698B69;
+    float: left;
+    padding-right: 70px;
+    padding-top: 30px;
+    margin-right: 20px;
+    margin-top: 35px;
+}
+
+#zakaz-1
+{
+    font-size: 25px;
+    padding-left: 25px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+#zakaz-2
+{
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 10px;
+    color: black;
+}
+
+form
+{
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 25%;
+    float: left;
+    color: black;
+    font-size: 15px;
+    padding-top: 10px;
+    border: 2px solid black;
+}
+/*КОНЕЦ ПРЕИМУЩЕСТВА И ЗАКАЗ*/
+
+/* FOOTER */
+.panel-footer 
+{
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #333;
+  border-top: 0;
+  color: white;
+  text-align: center;
+}
+
+.panel-footer div.row 
+{
+  margin-bottom: 35px;
+}
+
+#hours, #address 
+{
+  line-height: 2;
+}
+
+#hours > span, #address > span
+{
+  font-size: 1.3em;
+}
+
+#address p 
+{
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+
+#testimonials 
+{
+  font-style: italic;
+}
+
+#testimonials p:nth-child(2) 
+{
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+
+}
+ 
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) 
+{
+  /* Header */
+
+  ul
+  {
+    width: 80%;
+  }
+  
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+
+.navbar-brand {
+
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  #collapsable-nav a {
+   /* Collapsed nav menu text */
+    font-size: 1.2em;
+    text-align: center;
+  }
+  #collapsable-nav a span { 
+    background-color: white;/* Collapsed nav menu glyph */
     font-size: 1em;
     margin-right: 5px;
   }
@@ -624,37 +1750,343 @@ form
     text-transform: uppercase;
   }
 
-  li
-  {
-    width: 100%;
+
+
+  #collapsable-nav a {
+   /* Collapsed nav menu text */
+    font-size: 1.7em;
+    text-align: center;
+  }
+  #collapsable-nav a span { 
+    background-color: white;/* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
   }
   /* End Header */
 
- 
+    /*ОСНОВНАЯ СТРАНИЦА*/
 
-/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
-  /* Header */
-  .navbar-brand h1 { /* Restaurant name */
+
+
+/*div#collapsable-nav.navbar-collapse.collapse.
+{
+    text-align: center;
+    padding-top: 15%;
+}*/
+
+li
+{
+    text-align: center;
+    padding-left: 45%;
+    padding-right: 10%;
     padding-top: 5px;
-    font-size: 6vw;
-  }
-  /* End Header */
-  
-  /* Home page */
-  #menu-tile, #specials-tile {
-    width: 280px;
-    margin: 0 auto 15px;
-  }
+    padding-bottom: 5px;
+    /*width: 100%;*/
 
-  .col-xxs-12 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+}
+
+
+
+    nav#header-nav.navbar.navbar-default
+    {
+        width: 100%;
+    }
+
+    /*ОСНОВНАЯ СТРАНИЦА*/
+
+hr 
+{
+    border-color: orange;
+    border-width: 2px;
+    width: 150px;
+    /*align-self: center;*/
+    vertical-align: middle;
+}
+
+#first 
+{
+    vertical-align: middle;
+    background-image: url(site.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+#name /*на верхней части*/
+{
+    /*padding-top: 100px;*/
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    margin: 0;
+    padding-top: 20%;
+    padding-bottom: 5%;
+    vertical-align: middle;
+}
+/*КОНЕЦ ОСНОВНОЙ СТРАНИЦЫ*/
+
+/*ТРЕТЬЯ ЧАСТЬ*/
+#third  /*справа ячейка*/
+{
+    background-color: #586857;
     float: left;
     width: 100%;
-  }
+    font-color: black;
+    margin-top: 0;
+    padding: 2%;
+    height: 100%;
+}
+
+#main_inf  /*справа текст*/
+{
+    margin: 1.1%;
+    padding: 1%;
+    height: 100%;
+    background-color: #698B69;
+    font-color: black;
+}
+
+#name-3
+{
+    color: black;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+#info
+{
+    padding-top: 20px;
+    padding-left: 25px;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+}
+
+#detals a
+{
+    color: white;
+    font-size: 18px;
+    padding-left: 25px;
+}
+ /*КОНЕЦ ТРЕТЬЯ ЧАСТЬ*/
+
+
+
+/* MENU CATEGORIES PAGE */
+
+#forth
+{
+    /*margin-top: 25px;*/
+    color: white;
+    background-color: #333;
+    padding-left: 15px;
+    height: 100%;
+    padding-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+/* END MENU CATEGORIES PAGE */
+
+
+/*ПРЕИМУЩЕСТВА И ЗАКАЗ*/
+#fifth
+{
+    color: white;
+    background-color: #586857;
+    padding-left: 15px;
+    height: 100%;
+    /*float: left;*/
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding-right: 15px;
+}
+
+#car
+{
+    height: 110px;
+    width: 110px;
+    background-color: orange;
+    padding-left: 7px;
+    padding-top: 10px;
+    /*text-align: center;*/
+    /*float: left;*/
+}
+
+#car-2
+{
+    /*float: left;*/
+    height: 20px;
+    width: 100%;
+    font-size:18px;
+    /*padding: 5px;*/
+    /*font-weight: 600px;*/
+    /*padding-left: 120px;*/
+
+}
+
+#car-3
+{
+    /*float: left;*/
+    height: 70px;
+    width: 280px; 
+    padding-top: 15px;
+    padding-bottom: 35px;
+    font-size: 13px;   
+}
+
+#opis
+{
+    float: left;
+}
+
+#first-img
+{
+    clear: left;
+    padding-top: 10px;
+}
+
+#second-img
+{
+    clear: left;
+    padding-top: 10px;
+}
+
+#third-img
+{
+    clear: left;
+    padding-top: 10px;
+}
+
+#preim
+{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-right: 5px;
+    width: 100%;
+    float: left;
+    background: #2F4F4F;
+    margin-top: 35px;
+}
+
+#zagl
+{
+    font-size: 25px;
+    text-align: center;
+    /*padding-right: 100px;*/
+}
+
+#zakaz
+{
+    width: 100%;
+    height: 640px;
+    background: #698B69;
+    float: left;
+    padding-right: 70px;
+    padding-top: 30px;
+    margin-right: 20px;
+    margin-top: 35px;
+}
+
+#zakaz-1
+{
+    font-size: 25px;
+    padding-left: 25px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+#zakaz-2
+{
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 10px;
+    color: black;
+}
+
+form
+{
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 25%;
+    float: left;
+    color: black;
+    font-size: 15px;
+    padding-top: 10px;
+    border: 2px solid black;
+}
+/*КОНЕЦ ПРЕИМУЩЕСТВА И ЗАКАЗ*/
+
+/* FOOTER */
+.panel-footer 
+{
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #333;
+  border-top: 0;
+  color: white;
+  text-align: center;
+}
+
+.panel-footer div.row 
+{
+  margin-bottom: 35px;
+}
+
+#hours, #address 
+{
+  line-height: 2;
+}
+
+#hours > span, #address > span
+{
+  font-size: 1.3em;
+}
+
+#address p 
+{
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+
+#testimonials 
+{
+  font-style: italic;
+}
+
+#testimonials p:nth-child(2) 
+{
+  margin-top: 25px;
+}
+/* END FOOTER */
 }
 
 
